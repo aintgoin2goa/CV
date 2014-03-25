@@ -16,10 +16,22 @@
 		margin-top: 0;
 	}
 
+	h3{
+		margin-bottom:0.8em;
+	}
+
+	p{
+		margin:0;
+	}
+
+	p.link{
+		margin:0.5em 0 1.5em 0;
+	}
+
 
 }
 
-@media all and (min-width:$BreakpointMedium){
+@include breakpoint($Medium){
 
 	#history{
 		clear:both;

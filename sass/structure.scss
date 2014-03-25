@@ -12,7 +12,7 @@ header, section{
 	margin-bottom:2em;
 }
 
-@media all and (min-width: $BreakpointMedium){
+@include breakpoint($Medium){
 
 	main{
 		margin:2em auto;

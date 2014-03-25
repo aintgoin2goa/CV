@@ -1,6 +1,7 @@
 header{
 
 	text-align:center;
+	margin-bottom:0em;
 
 	h1{
 		font-family: $Gotham;
@@ -16,7 +17,7 @@ header{
 	}
 }
 
-@media all and (min-width:$BreakpointMedium){
+@include breakpoint($Medium){
 
 	header h1{
 		font-size: 6em;

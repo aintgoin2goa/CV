@@ -1,9 +1,11 @@
 @import 'bourbon/bourbon';
 @import 'lib/reset';
 @import 'lib/icons';
+@import 'lib/mixins';
 
 $DividerColor : #DDD;
-$BreakpointMedium: 600px;
+$Medium: 600px;
+$BreakpointMedium : $Medium;
 
 
 @import 'typography';
@@ -14,4 +16,43 @@ $BreakpointMedium: 600px;
 @import 'contact';
 @import 'history';
 @import 'qualifications';
+
+@media print{
+
+	body{
+		font-size: 12px;
+	}
+
+	main:before,
+	main:after
+	{
+		display:none;
+	}
+
+	#contact{
+		a:after{
+			display:none;
+		}
+
+		.linkedin{
+			display:none;
+		}
+	}
+
+	#history{
+		a{
+			font-size:0;
+			position: relative;
+			color:#FFF;
+		}
+
+		a:after{
+			font-family: inherit;
+			font-size: 12px;
+			content : attr(href);
+			position: absolute;
+			left:0;
+		}
+	}
+}
 

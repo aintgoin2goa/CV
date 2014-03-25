@@ -23,7 +23,7 @@
 
 }
 
-@media all and (min-width:$BreakpointMedium){
+@include breakpoint($Medium){
 
 	#intro{
 		float:left;
