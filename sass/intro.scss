@@ -1,0 +1,38 @@
+#intro{
+
+	h3{
+		margin-bottom:1em;
+	}
+
+	li{
+		margin-bottom: 0.5em;
+		@include icon-after($icon-check);
+	}
+
+	li.good:after{
+		opacity:0.8;
+	}
+
+	li.reasonable:after{
+		opacity: 0.6;
+	}
+
+	li.working-knowledge:after{
+		opacity: 0.4;
+	}
+
+}
+
+@media all and (min-width:$BreakpointMedium){
+
+	#intro{
+		float:left;
+		width:49%;
+
+		p{
+			position:relative;
+			width:200%;
+		}
+	}
+
+}

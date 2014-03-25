@@ -1,0 +1,70 @@
+@import 'lib/fonts';
+
+body{
+	font-family: $GothamBook;
+	color: #111;
+}
+
+h1{
+	font-family: $Gotham;
+	font-size:1.7em;
+	text-transform:uppercase;
+}
+
+h2{
+	font-family: $GothamBook;
+	font-size:1.2em;
+	text-transform:uppercase;
+}
+
+h3{
+	font-family: $Gotham;
+	font-size: 1em;
+	text-transform:uppercase;
+}
+
+h3{
+	font-family: $GothamBold;
+	font-size: 1em;
+	text-transform:uppercase;
+}
+
+p{
+	margin:1em 0;
+	line-height: 1.2em;
+}
+
+a{
+	color: inherit;
+	text-decoration: underline;
+	@include icon-after($icon-link);
+	@include transition(all 250ms linear);
+}
+
+a:after{
+	@include transition(all 250ms linear);
+}
+
+a:hover{
+	color:#CCC;
+}
+
+a:hover:after{
+	padding-left: 10px;
+}
+
+@media all and (min-width: $BreakpointMedium){
+
+	h1{
+		font-size: 2em;
+	}
+
+	h2{
+		font-size: 1.5em
+	}
+
+	h3{
+		font-size: 1.2em;
+	}
+
+}

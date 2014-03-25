@@ -1,0 +1,11 @@
+@include font-face(Gotham, 'fonts/Gotham-Medium/Gotham-Medium');
+@include font-face(GothamBold, 'fonts/Gotham-Bold/Gotham-Bold');
+@include font-face(GothamBook, 'fonts/Gotham-Book/Gotham-Book');
+@include font-face(GothamThin, 'fonts/Gotham-Thin/Gotham-Thin');
+@include font-face(FontAwesome, 'fonts/FontAwesome/FontAwesome-webfont');
+
+$Gotham: Gotham, Helvetica, Arial, sans-serif;
+$GothamBold: GothamBold, Helvetica, Arial, sans-serif;
+$GothamBook: GothamBook, Helvetica, Arial, sans-serif;
+$GothamThin: GothamThin, Helvetica, Arial, sans-serif;
+$FontAwesome : FontAwesome;

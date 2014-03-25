@@ -1,0 +1,28 @@
+#history{
+
+	margin-top:2em;
+	padding-top:2em;
+	border-top:1px solid $DividerColor;
+
+	h1{
+		margin-bottom: 1em;
+	}
+
+	h2{
+		margin-top:1em;
+	}
+
+	h2:first-child{
+		margin-top: 0;
+	}
+
+
+}
+
+@media all and (min-width:$BreakpointMedium){
+
+	#history{
+		clear:both;
+	}
+
+}

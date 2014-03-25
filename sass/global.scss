@@ -1,0 +1,30 @@
+body{
+	background-color:#EFEFEF;
+}
+
+main{
+	background-color:#FFF;
+	box-shadow: 0 0 3em 0 rgba(0,0,0,0.3);
+	position:relative;
+}
+
+main:before, main:after
+{
+	position: absolute;
+	width: 40%;
+	height: 10px;
+	content: ' ';
+	left: 12px;
+	bottom: 28px;
+	background: transparent;
+	@include transform(skew(-10deg) rotate(-10deg));
+	box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+	z-index: -1;
+} 
+
+main:after
+{
+	left: auto;
+	right: 12px;
+	@include transform(skew(10deg) rotate(10deg));
+}

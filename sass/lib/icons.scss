@@ -1,0 +1,25 @@
+$icon-link :  "\f090";
+$icon-email : "\f0e0";
+$icon-phone : "\f095";
+$icon-linkedIn : "\f0e1";
+$icon-check : "\f164";
+
+@mixin icon-before($icon){
+	&:before{
+		font-family: $FontAwesome;
+		content: $icon;
+		display: inline-block;
+		vertical-align: middle;
+		padding-right: 0.5em;
+	}
+}
+
+@mixin icon-after($icon){
+	&:after{
+		font-family: $FontAwesome;
+		content: $icon;
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 0.5em;
+	}
+}
