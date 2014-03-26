@@ -2,13 +2,15 @@ body{
 	background-color:#EFEFEF;
 }
 
-main{
+#main{
 	background-color:#FFF;
 	box-shadow: 0 0 3em 0 rgba(0,0,0,0.3);
 	position:relative;
 }
 
-main:before, main:after
+
+
+#main:before, #main:after
 {
 	position: absolute;
 	width: 40%;
@@ -22,9 +24,10 @@ main:before, main:after
 	z-index: -1;
 } 
 
-main:after
+#main:after
 {
 	left: auto;
 	right: 12px;
 	@include transform(skew(10deg) rotate(10deg));
 }
+

@@ -28,16 +28,13 @@
   #history{
     a{
       font-size:0;
-      position: relative;
       color:#FFF;
     }
 
     a:after{
       font-family: inherit;
       font-size: 12px;
-      content : attr(href);
-      position: absolute;
-      left:0;
+      content : '[' attr(href) ']';
     }
   }
 }

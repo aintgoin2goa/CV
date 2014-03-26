@@ -53,7 +53,7 @@ a:hover:after{
 	padding-left: 10px;
 }
 
-@media all and (min-width: $BreakpointMedium){
+@include breakpoint($Medium){
 
 	h1{
 		font-size: 2em;

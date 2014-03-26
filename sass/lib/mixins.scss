@@ -1,0 +1,15 @@
+@mixin breakpoint($width){
+
+  @media screen and (min-width: $width){
+    @content;
+  }
+
+  .lt-ie9{
+    @content;
+  }
+
+  @media print{
+    @content;
+  }
+
+}
